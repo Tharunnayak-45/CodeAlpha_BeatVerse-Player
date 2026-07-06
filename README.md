@@ -1,38 +1,21 @@
 # 🎵 BeatVerse
+-----------------------------------------------------------------
 
-<div align="center">
-
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-<img src="https://img.shields.io/badge/Responsive-Yes-success?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Status-Live-brightgreen?style=for-the-badge"/>
-
-# BeatVerse
-
-### A Modern Spotify-Inspired Music Player Built with HTML, CSS & JavaScript
-
-Experience a beautifully designed music player featuring smooth animations, responsive layouts, playlist management, favorites, lyrics, and an immersive listening experience.
-
-### 🌐 Live Website
-### https://beatverse-player.vercel.app/
-
-### 🎥 Project Demo
-## 👉 **[▶ Click Here to Watch BeatVerse Demo](./BeatVerse.mp4)**
-
-⭐ **If you found this project useful, please consider giving it a Star!**
-
-</div>
-
----
-
-# 📖 Description
+# 📖 Overview
 
 BeatVerse is a modern web-based music player designed to deliver a premium music listening experience directly in the browser. Inspired by the clean aesthetics of leading streaming platforms, BeatVerse combines an elegant user interface with smooth interactions and responsive design.
 Developed entirely using HTML5, CSS3, and Vanilla JavaScript, the project demonstrates modern frontend development practices without relying on external frameworks. It focuses on performance, usability, and an engaging user experience while showcasing interactive UI design and JavaScript functionality.
-Whether you're exploring playlists, managing your favorite songs, or simply enjoying music with beautiful animations, BeatVerse provides a seamless and enjoyable experience across desktop and mobile devices.
 
 ---
+🌐 **Live Demo:** 
+👉 **[▶️ Demo]: https://beatverse-player.vercel.app/
+
+🎥 **Project Demo:**  
+👉 **[▶️ Click Here to Watch the BeatVerse Demo](https://drive.google.com/file/d/1Z4lMg_foHQljNfgwwEZ-oLg-27mmICQc/view?usp=drive_link)**
+
+⭐ If you like this project, don't forget to give it a star!
+
+</div>
 
 # ✨ Features
 
