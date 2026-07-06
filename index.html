@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatVerse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="app">
+
+        <div class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="images/beatverse-logo.png" alt="BeatVerse logo" class="logo-img">
+                </div>
+                <div class="logo-text">
+                    <h1>BeatVerse</h1>
+                    <p>Feel Every Beat</p>
+                </div>
+            </div>
+
+            <div class="nav-item active" id="homeBtn">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </div>
+            <div class="nav-item">🔍 Search</div>
+            <div class="nav-item">📚 Your Library</div>
+            <div class="nav-item" id="likedNav">❤ Liked Songs</div>
+
+            <div class="section-label">ALL SONGS</div>
+            <div class="playlist" id="playlist"></div>
+
+            <div class="sidebar-footer">
+                <div class="user-avatar">
+
+                </div>
+                <div class="user-info">
+                    <div class="name">Tharun</div>
+                    <div class="plan">mtharun616@gmail.com</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main">
+
+            <div class="topbar">
+                <div class="nav-btn">‹</div>
+                <div class="nav-btn">›</div>
+                <div class="search-bar" id="searchBar">
+                    🔍 <input type="text" id="searchInput" placeholder="Search songs.">
+                </div>
+                <div class="topbar-right">
+                    <div class="theme-toggle" id="themeToggle">
+                        <span>☀</span>
+                        <span class="active-theme">🌙</span>
+                    </div>
+                    <div class="icon-btn">
+                        🔔
+                        <div class="notif-dot"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+
+                <div class="player-panel" id="playerPanel">
+
+                    <div class="playing-now">
+                        <div class="heart-btn" id="heartBtn">♡</div>
+                    </div>
+
+                    <div class="track-title" id="trackTitle">Select a song</div>
+                    <div class="track-artist" id="trackArtist">BeatVerse</div>
+
+                    <div class="track-tags">
+                        <div class="tag">HD Audio</div>
+                        <div class="tag">MP3</div>
+                    </div>
+
+                    <div class="album-art-wrap">
+                        <div class="album-art">
+                            <svg class="progress-ring" viewBox="0 0 368 368">
+                                <circle cx="184" cy="184" r="176" fill="none" stroke="#1a1c24" stroke-width="6" />
+                                <circle id="ringProgress" cx="184" cy="184" r="176" fill="none" stroke="#21e065"
+                                    stroke-width="6" stroke-dasharray="1106" stroke-dashoffset="1106"
+                                    stroke-linecap="round" />
+                            </svg>
+
+                            <img id="albumArt" src="" alt="">
+                        </div>
+                    </div>
+
+                    <div class="equalizer" id="equalizer"></div>
+
+                    <div class="controls">
+                        <div class="ctrl-icon" id="shuffleBtn">🔀</div>
+                        <div class="ctrl-icon" id="prevBtn">⏮</div>
+                        <div class="play-btn" id="playBtn">▶</div>
+                        <div class="ctrl-icon" id="nextBtn">⏭</div>
+                        <div class="ctrl-icon" id="repeatBtn">🔁</div>
+                    </div>
+
+                    <div class="seek-row">
+                        <span id="currentTime">00:00</span>
+                        <div class="seek-track" id="seekTrack">
+                            <div class="seek-fill" id="seekFill"></div>
+                            <div class="seek-dot" id="seekDot"></div>
+                        </div>
+                        <span id="durationTime">10:00</span>
+                    </div>
+
+                </div>
+
+                <div class="lyrics-panel">
+                    <div class="lyrics-header">
+                        <h3>Up Next</h3>
+                        <span>☰</span>
+                    </div>
+                    <div class="lyrics-body" id="queueList"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="bottom-bar">
+
+            <div class="bottom-track-info">
+                <img class="bottom-thumb" id="bottomArt" src="" alt="">
+                <div class="titles">
+                    <div class="t" id="bottomTitle">Select a song</div>
+                    <div class="a" id="bottomArtist">BeatVerse</div>
+                </div>
+                <div class="bottom-heart" id="bottomHeart">♡</div>
+            </div>
+
+            <div class="bottom-center">
+                <div class="bottom-controls">
+                    <div class="ctrl-icon" id="bShuffleBtn">🔀</div>
+                    <div class="ctrl-icon" id="bPrevBtn">⏮</div>
+                    <div class="bottom-play" id="bottomPlay">▶</div>
+                    <div class="ctrl-icon" id="bNextBtn">⏭</div>
+                    <div class="ctrl-icon" id="bRepeatBtn">🔁</div>
+                </div>
+                <div class="bottom-seek">
+                    <span id="bCurrentTime">00:00</span>
+                    <div class="seek-track" id="bSeekTrack">
+                        <div class="seek-fill" id="bSeekFill"></div>
+                        <div class="seek-dot" id="bSeekDot"></div>
+                    </div>
+                    <span id="bDurationTime">10:00</span>
+                </div>
+            </div>
+
+
+            <div class="bottom-right">
+                <div class="ctrl-icon">🔊</div>
+                <div class="volume-track" id="volumeTrack">
+                    <div class="volume-fill" id="volumeFill"></div>
+                    <div class="volume-dot" id="volumeDot"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <audio id="audioPlayer"></audio>
+
+    <script src="script.js"></script>
+    <script>
+
+        (function () {
+            const playlist = document.getElementById('playlist');
+            const searchInput = document.getElementById('searchInput');
+
+            function clearActive() {
+                document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            }
+
+            function renderEmpty(message) {
+                playlist.innerHTML = '';
+                const empty = document.createElement('div');
+                empty.className = 'playlist-empty';
+                empty.textContent = message;
+                playlist.appendChild(empty);
+            }
+
+            function renderList(items) {
+                playlist.innerHTML = '';
+                if (!items || items.length === 0) {
+                    renderEmpty('No songs to display.');
+                    return;
+                }
+                items.forEach(item => {
+                    const el = document.createElement('div');
+                    el.className = 'playlist-item';
+                    el.textContent = (item.title || 'Unknown Title') + ' — ' + (item.artist || 'Unknown Artist');
+                    playlist.appendChild(el);
+                });
+            }
+
+            // try to load stored song lists; fall back to sample data
+            let allSongs = [];
+            let library = [];
+            try { allSongs = JSON.parse(localStorage.getItem('allSongs') || '[]'); } catch (e) { allSongs = []; }
+            try { library = JSON.parse(localStorage.getItem('librarySongs') || '[]'); } catch (e) { library = []; }
+            const likedNav = document.getElementById('likedNav');
+            const homeNav = Array.from(document.querySelectorAll('.nav-item')).find(n => n.textContent.includes('Home'));
+            const searchNav = Array.from(document.querySelectorAll('.nav-item')).find(n => n.textContent.includes('Search'));
+            const libraryNav = Array.from(document.querySelectorAll('.nav-item')).find(n => n.textContent.includes('Library'));
+
+            // Sample fallback if no data
+            const sample = [
+                { title: 'Sunrise', artist: 'A. Artist' },
+                { title: 'Moonlight', artist: 'B. Band' },
+                { title: 'Ocean Drive', artist: 'C. Composer' }
+            ];
+
+            homeNav && homeNav.addEventListener('click', () => {
+                clearActive(); homeNav.classList.add('active');
+                renderList(allSongs.length ? allSongs : sample);
+            });
+
+            searchNav && searchNav.addEventListener('click', () => {
+                clearActive(); searchNav.classList.add('active');
+                renderEmpty('Type to search songs or artists...');
+                searchInput && searchInput.focus();
+            });
+
+            libraryNav && libraryNav.addEventListener('click', () => {
+                clearActive(); libraryNav.classList.add('active');
+                renderList(library.length ? library : []);
+            });
+
+            likedNav && likedNav.addEventListener('click', () => {
+                clearActive(); likedNav.classList.add('active');
+                // Try multiple possible storage keys and fallbacks to ensure liked songs display
+                let liked = [];
+                try { liked = JSON.parse(localStorage.getItem('likedSongs') || 'null'); } catch (e) { liked = null; }
+                if (!liked) {
+                    try { liked = JSON.parse(localStorage.getItem('likes') || 'null'); } catch (e) { liked = null; }
+                }
+                // Fallback: gather from allSongs entries that have a liked flag
+                if ((!liked || !Array.isArray(liked) || liked.length === 0) && Array.isArray(allSongs) && allSongs.length) {
+                    const fromAll = allSongs.filter(s => s && (s.liked === true || s.isLiked === true));
+                    if (fromAll.length) liked = fromAll.map(s => ({ title: s.title, artist: s.artist }));
+                }
+                if (!liked || liked.length === 0) renderEmpty('No liked songs yet.');
+                else renderList(liked);
+            });
+
+            // default view: Home
+            if (homeNav) homeNav.click();
+        })();
+    </script>
+</body>
+
+</html>
