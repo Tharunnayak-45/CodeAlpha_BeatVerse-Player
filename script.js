@@ -14,8 +14,8 @@ const tracks = [
     {
         title: "Nijanga Nenana",
         artist: "Karthik",
-        src: "songs/Nijanga Nenana.mp3",
-        art: "images/Nijanga Nenana.jpg"
+        src: "songs/Nijanga Nenena.mp3",
+        art: "images/Nijanga Nenena.jpg"
     },
 
     {
