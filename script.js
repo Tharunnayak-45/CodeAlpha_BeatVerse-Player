@@ -12,6 +12,13 @@ const tracks = [
         art: "images/Chikiri.jpg"
     },
     {
+        title: "Nijanga Nenana",
+        artist: "Karthik",
+        src: "songs/Nijanga Nenana.mp3",
+        art: "images/Nijanga Nenana.jpg"
+    },
+
+    {
         title: "Humsafar",
         artist: "Sachet-Parampara",
         src: "songs/Humsafar.mp3",
@@ -41,6 +48,13 @@ const tracks = [
         src: "songs/Raga of Revenge.mp3",
         art: "images/rage.jpg"
     },
+    {
+        title: "Manasara",
+        artist: "Geetha Madhuri",
+        src: "songs/Manasara.mp3",
+        art: "images/Manasara.jpg"
+    },
+
     {
         title: "Rai Rai Raa Raa",
         artist: "Mohit Chauhan",
