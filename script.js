@@ -12,7 +12,7 @@ const tracks = [
         art: "images/Chikiri.jpg"
     },
     {
-        title: "Nijanga Nenana",
+        title: "Nijanga Nenena",
         artist: "Karthik",
         src: "songs/Nijanga Nenena.mp3",
         art: "images/Nijanga Nenena.jpg"
